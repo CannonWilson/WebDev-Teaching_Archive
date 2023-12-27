@@ -1,0 +1,110 @@
+.sign-in-title {
+	margin-top: 70px;
+	font-size: 2.19rem;
+	font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.sign-in-title-caption {
+	max-width: 50%;
+	margin-top: -5px;
+	text-align: center;
+	font-size: 1.125rem;
+	font-size: clamp(0.8rem, 1.3vw, 1.15rem);
+}
+
+.sign-in-link {
+	text-decoration: underline;
+}
+
+.sign-in-link:hover {
+	color: blue !important;
+}
+
+.sign-in-link:visited {
+	color: black;
+}
+
+.log-in-box {
+	width: 60%;
+	background: #efefef;
+	border: solid #dedede 3px;
+	height: 60%;
+	border-radius: 20px;
+	margin-top: 30px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin-bottom: 70px;
+}
+
+.username-block, .password-block  {
+	display: flex;
+	width: 60%;
+	justify-content: center;
+	align-items: center;
+	column-gap: 20px;
+}
+
+@media (max-width: 800px) {
+	
+	.username-block, .password-block {
+		flex-direction: column;
+		width: 80%;
+	}
+	
+	#username-label, #password-label {
+		margin-bottom: 10px;
+		
+	}
+	
+	#username-input-elem, #password-input-elem {
+		width: 70% !important;
+	}
+	
+}
+
+.password-block {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#username-label, #password-label {
+	font-size: 1.25rem;
+	font-size: clamp(1rem, 1.2vw, 1.9rem);
+	/* width: 100px; */
+	font-weight: bold;
+}
+
+#username-input-elem, #password-input-elem {
+	font-size: 1.25rem;
+	font-size: clamp(1rem, 1.2vw, 1.9rem);
+	border-radius: 10px;
+	height: 40px;
+	width: 300px;
+	width: clamp(50px, 15vw, 300px);
+	padding-left: 10px;
+}
+
+/* Override .default-button styling to make
+login button bigger and darker */
+#log-in-button {
+	width: 160px;
+	width: clamp(100px, 10vw, 200px);
+	border-radius: 10px;
+	font-size: 1.25rem;
+	font-size: clamp(1rem, 1.2vw, 1.9rem);
+	background: #cfcfcf;
+	margin-top: 10px;
+}
+
+#log-in-button:hover {
+	background: #bfbfbf
+}
+
+#sign-in-error {
+	margin-bottom: 30px;
+}
+
+#sign-in-error:empty {
+	margin: 0;
+}
+

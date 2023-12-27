@@ -1,0 +1,57 @@
+.lesson-wrapper {
+	padding-top: 10px;
+	padding-top: clamp(3px, 3vw, 10px);
+	padding-bottom: 10px;
+	padding-bottom: clamp(3px, 3vw, 10px);
+}
+
+.lesson-link {
+	display: flex;
+	align-items: center;
+	max-width: fit-content;
+	color: black;
+}
+
+.lesson-link:visited {
+	color: black;
+}
+
+.lesson-circle {
+	width: 40px;
+	width: clamp(40px, 3vw, 50px);
+	min-width: 40px;
+	height: 40px;
+	height: clamp(40px, 3vw, 50px);
+	font-size: 1.25rem;
+	font-size: clamp(1.1rem, 1.7vw, 1.4rem);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #efefef;
+	border-radius: 50%;
+	font-weight: bold;
+}
+
+.lesson-link:hover .lesson-circle{
+	background-color: #dedede;
+}
+
+.completed {
+	background-color: #0abe64;
+	color: white;
+}
+
+.lesson-link:hover .completed{
+	background-color: #08a858;
+}
+
+.lesson-link:hover .lesson-name{
+	text-decoration: underline;
+}
+
+.lesson-name {
+	margin-left: 20px;
+	font-size: 1.06rem;
+	font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+	font-weight: bold;
+}

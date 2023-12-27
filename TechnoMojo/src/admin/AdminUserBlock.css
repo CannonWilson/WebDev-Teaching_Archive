@@ -1,0 +1,29 @@
+.block-wrapper {
+	min-height: 50px;
+	min-width: 50px;
+	max-width: 300px;
+	border-radius: 10px;
+	border: solid lightgray 3px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 15px;
+}
+
+.block-header {
+	font-weight: bold;
+	font-size: 1rem;
+	font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+}
+
+.block-code {
+	font-family: monospace;
+	text-align: left;
+	white-space: pre-wrap;
+	background-color: #fff;
+	border: solid #fafafa 3px;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 0.8rem;
+	font-size: clamp(0.7rem, 1.3vw, 1rem);
+}

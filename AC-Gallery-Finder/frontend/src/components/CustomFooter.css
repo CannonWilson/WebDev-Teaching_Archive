@@ -1,0 +1,15 @@
+.footer-links {
+    background-color: lightgray;
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    border-top: solid 1px;
+}
+
+.sign {
+    margin: 10px;
+}
+
+.watermark {
+    margin-top: 10px;
+}

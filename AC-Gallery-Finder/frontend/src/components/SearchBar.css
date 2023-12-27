@@ -1,0 +1,17 @@
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+.event {
+    background-color: aliceblue;
+}
+.bar {
+    padding: .5em;
+}
+input {
+    width: 22vw;
+    height: 6vh;
+    border-radius: 5vw;
+    border: 1px solid;
+    padding: 1em;
+}

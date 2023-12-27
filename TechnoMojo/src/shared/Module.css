@@ -1,0 +1,78 @@
+.module-wrapper {
+	width: 100%;
+}
+
+.module-title-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-bottom: solid 3px #dedede;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.module-title-wrapper:hover {
+	background-color: #efefef;
+}
+
+
+.module-content {
+	display: none;
+	padding: 40px 10% 40px 10%;
+	justify-content: center;
+	flex-direction: column;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	transform-origin: 0 40px;
+}
+
+.module-expanded {
+	transform: scaleY(1);
+	opacity: 1;
+	max-height: 700vh;
+}
+
+.module-contracted {
+	transform: scaleY(0);
+	opacity: 0;
+	max-height: 40px;
+}
+
+.module-name, .module-plus-minus {
+	margin-left: 30px;
+}
+
+.module-name {
+	font-size: 1.2rem;
+	font-size: clamp(0.95rem, 1.8vw, 1.25rem);
+	font-weight: bold;
+}
+
+.module-plus-minus {
+	border-radius: 50%;
+	background: #bebebe;
+	color: white;
+	height: 40px;
+	min-height: 40px;
+	width: 40px;
+	min-width: 40px;
+	padding: 0;
+	font-size: 1.25rem;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.plus-minus-rotated {
+	transform:rotate(180deg); 
+	-webkit-transform:rotate(180deg); 
+	-moz-transform:rotate(180deg); 
+	-o-transform:rotate(180deg); 
+}

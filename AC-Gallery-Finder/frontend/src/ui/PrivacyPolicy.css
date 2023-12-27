@@ -1,0 +1,18 @@
+.wrapper{
+    margin: 40px 40px 0 40px;
+    background-color: white;
+    padding-bottom: 160px;
+}
+
+li {
+    background-color: white;
+}
+
+.stickyContainer {
+    position: sticky;
+    vertical-align: center;
+    align-content: end;
+    bottom: 0;
+    height: 60px;
+    float: right;
+}

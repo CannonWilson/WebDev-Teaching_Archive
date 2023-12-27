@@ -1,0 +1,193 @@
+.lecture-page-content {
+	margin-top: 30px;
+	width: 90%;
+	text-align: center;
+}
+
+.lecture-primary-title {
+	min-height: 40px;
+	font-size: 3.125rem;
+	font-size: clamp(1.4rem, 3vw, 2.8rem);
+}
+
+.lecture-primary-subtitle {
+	margin-top: -20px;
+	margin-bottom: 40px;
+	font-size: 1rem;
+	font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.lecture-secondary-title {
+	margin-top: 130px;
+	font-size: 1.875rem;
+	font-size: clamp(1.3rem, 2.6vw, 2.1rem);
+}
+
+.lecture-secondary-subtitle {
+	margin-bottom: 40px;
+	font-size: 1rem;
+	font-size: clamp(0.7rem, 1.85vw, 1.15rem);
+}
+
+
+/* Start quiz section */
+.quiz-wrapper {
+	display: grid;
+	width: 100%;
+	border-radius: 10px;
+	border: solid #dedede 3px;
+	grid-template: 
+		".         questionHeader questionHeader ."
+		"leftArrow choice1        choice2        rightArrow"
+		"leftArrow choice3        choice4        rightArrow"
+		".         feedback       feedback       ."
+		".         submitBtn      submitBtn      .";
+	grid-template-columns: 10% 40% 40% 10%;
+	grid-auto-rows: auto;
+}
+
+/* Collapse choices into one column below viewport width of 700px */
+@media (max-width: 700px) {
+	
+	.quiz-wrapper {
+		grid-template: 
+			".         questionHeader ."
+			"leftArrow choice1        rightArrow"
+			"leftArrow choice2        rightArrow"
+			"leftArrow choice3        rightArrow"
+			"leftArrow choice4        rightArrow"
+			".         feedback       ."
+			".         submitBtn      .";
+		grid-template-columns: 10% 80% 10%;
+	}
+	
+}
+
+.question-header {
+	grid-area: questionHeader;
+	padding: 30px;
+	font-weight: bold;
+	font-size: 1rem;
+	font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.choice {
+	display: flex;
+	padding: 30px;
+	padding: clamp(10px, 2vw, 30px);
+	align-items: center;
+	text-align: left;
+	border-radius: 20px;
+	white-space: pre-wrap;
+	min-height: 50px;
+	border: solid 3px white;
+	overflow-wrap: break-word;
+	font-size: 1rem;
+	font-size: clamp(0.7rem, 1.7vw, 1.1rem);
+}
+
+.choice:hover {
+	background-color: rgba(0, 227, 98, 0.2);
+	border: solid 3px  rgba(0, 227, 98, 0.6);
+}
+
+.clicked-choice {
+	background-color: rgba(0, 227, 98, 0.6);
+}
+
+.clicked-choice:hover {
+	background-color: rgba(0, 227, 98, 0.6);
+}
+
+.choice1 {
+	grid-area: choice1;
+}
+
+.choice2 {
+	grid-area: choice2;
+}
+
+.choice3 {
+	grid-area: choice3;
+}
+
+.choice4 {
+	grid-area: choice4;
+}
+
+.lecture-arrow {
+	height: 48px;
+	height: clamp(28px, 3vw, 48px) !important;
+	width: 48px;
+	width: clamp(28px, 3vw, 48px) !important;
+}
+
+.question-feedback {
+	grid-area: feedback;
+	padding-top: 30px;
+	font-weight: bold;
+	font-size: 0.8rem;
+	font-size: clamp(0.6rem, 1.5vw, 0.9rem);
+}
+
+.question-feedback:empty {
+	padding: 0px;
+}
+
+.submit-choice-btn-wrapper {
+	grid-area: submitBtn;
+	padding: 30px;
+}
+
+/* The !important flags are needed here since there is some conflict between this class 
+and the default-button class */
+.submit-choice-btn {
+	font-size: 1.2rem !important;
+	font-size: clamp(0.8rem, 2vw, 1.2rem) !important;
+	padding: 15px 25px 15px 25px !important;
+}
+
+.quiz-left-arrow {
+	grid-area: leftArrow;
+}
+
+.quiz-right-arrow {
+	grid-area: rightArrow;
+}
+/* End quiz section */
+
+
+#submission-text-area {
+	height: 60vh;
+	width: 100%;
+	font-size: 1rem;
+	font-size: clamp(0.8rem, 2vw, 1.2rem);
+	resize: none;
+	border: solid #dedede 3px;
+}
+
+#submit-error {
+	font-weight: bold;
+	padding-top: 30px;
+	font-size: 0.8rem;
+	font-size: clamp(0.6rem, 1.5vw, 0.9rem);
+}
+
+#submit-error:empty {
+	padding: 0;
+	margin: 0;
+}
+
+.lecture-submit-btn {
+	margin-bottom: 40px;
+	margin-top: 40px;
+	min-width: 200px;
+	border-radius: 10px !important;
+	font-size: 3.44rem !important;
+	font-size: clamp(1rem, 2vw, 1.5rem) !important;
+	padding: 15px 25px 15px 25px !important;
+}
+
+.answer-section {
+	margin-top: 90px;
+}

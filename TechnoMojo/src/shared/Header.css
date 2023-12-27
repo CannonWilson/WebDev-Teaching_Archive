@@ -1,0 +1,78 @@
+.header-wrapper {
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	-webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+	-moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+	box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+}
+
+.left-link, .right-link {
+	color: black;
+	font-size: 1.25rem;
+	font-size: clamp(0.8rem, 1.5vw, 1.3rem);
+	font-weight: bold;
+}
+
+.left-link:visited, .right-link:visited {
+	color: black;
+}
+
+.left-link:hover, .right-link:hover {
+	text-decoration: underline;
+}
+
+.left-link-section {
+	margin-left: 30px;
+	margin-left: clamp(10px, 2vw, 30px);
+	text-align: left;
+}
+
+.right-link-section {
+	margin-right: 30px;
+	margin-right: clamp(10px, 2vw, 30px);
+	text-align: right;
+}
+
+.large-right-text {
+	display: inline-block;
+}
+
+.small-right-text {
+	display: none;
+}
+
+@media (max-width: 500px) {
+	.large-right-text {
+		display: none;
+	}
+	
+	.small-right-text {
+		display: inline-block;
+	}
+}
+
+.logo-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-self: center;
+}
+
+.logo-text {
+	font-size: 1.7rem;
+	font-size: clamp(1.2rem, 2.2vw, 1.7rem);
+	font-weight: bold;
+}
+
+.left-link-section, .right-link-section, .logo-section {
+	flex: 1;
+}
+
+.robot-logo {
+	width: 50px;
+	width: clamp(30px, 3vw, 50px);
+	height: 50px;
+	height: clamp(30px, 3vw, 50px);
+}

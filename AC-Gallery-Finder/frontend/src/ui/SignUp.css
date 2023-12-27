@@ -1,0 +1,22 @@
+.profile-image{
+    width: 300px;
+    height: 300px;
+}
+
+.main {
+    padding-bottom: 160px;
+}
+
+textarea {
+    width: 50vw;
+    height: 10vw;
+    resize: none;
+}
+
+.incorrect::placeholder {
+    color: red;
+}
+
+.sign-button {
+    margin: .5em;
+}

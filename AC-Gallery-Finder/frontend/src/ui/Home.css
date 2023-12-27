@@ -1,0 +1,44 @@
+.map-container {
+    height: 600px;
+    margin: 20px;
+    position: relative;
+    margin-bottom: 80px;
+    outline: solid 5px;
+    /*border-color: #9e1b1b;*/
+}
+
+/*.sidebar {*/
+/*    background-color: rgba(35, 55, 75, 0.9);*/
+/*    position: relative;*/
+/*    color: #fff;*/
+/*    padding: 6px 12px;*/
+/*    font-family: monospace;*/
+/*    z-index: 1;*/
+/*    left: 0;*/
+/*    margin: 12px;*/
+/*    margin-top: 100px;*/
+/*    border-radius: 4px;*/
+/*}*/
+
+.content-wrapper {
+    /*This is to offset the bottom to make the footer look good*/
+    /*This value should be the exact same as the footer's height*/
+    padding-bottom: 80px;
+}
+
+.home-page {
+    position: relative;
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+
+/*.carousel {*/
+/*    padding-bottom: 200px;*/
+/*    padding-left: 100px;*/
+/*    padding-right: 100px;*/
+/*}*/
+/**/
+/**/
+/*.carousel-styling {*/
+/*    color: black !important;*/
+/*}*/

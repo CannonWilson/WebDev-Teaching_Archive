@@ -1,0 +1,92 @@
+.admin-card {
+	border: solid 3px #dedede;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-width: 18%;
+	max-width: 100%;
+}
+
+.admin-card-header {
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 1rem;
+	font-size: clamp(0.6rem, 1.4vw, 1rem);
+}
+
+.admin-card-header:hover {
+	background-color: #efefef;
+}
+
+.admin-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+
+.admin-modal-content {
+	background: white;
+	border: solid 3px #dedede;
+	width: 85%;
+	height: 80%;
+	padding: 40px;
+	border-radius: 10px;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.admin-modal-header {
+	display: grid;
+	grid-template-areas: ". userInfo close";
+	grid-template-columns: 50px 1fr 50px;
+	width: 100%;
+	grid-auto-rows: auto;
+}
+
+.admin-modal-close {
+	text-align: right;
+	width: 100%;
+	grid-area: close
+}
+
+.admin-modal-close-btn {
+	cursor: pointer;
+	background: none;
+	border: none;
+	font-weight: bold;
+	font-size: 2.5rem;
+	font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.admin-modal-user-info {
+	grid-area: userInfo;
+}
+
+.admin-modal-username, .admin-modal-completion {
+	text-align: center;
+}
+
+.admin-modal-username {
+	font-size: 2rem;
+	font-size: clamp(1.5rem, 2.5vw, 2.4rem);
+}
+
+.admin-modal-completion {
+	font-size: 1.2rem;
+	font-size: clamp(0.9rem, 1.5vw, 1.4rem);
+}
